@@ -1,0 +1,7 @@
+body{margin:0;font-family:Georgia,serif;background:linear-gradient(#ffd54f,#fff8dc);overflow:hidden}
+.screen,#letter{display:flex;justify-content:center;align-items:center;flex-direction:column;height:100vh;padding:20px;text-align:center}
+.hidden{display:none}
+button{padding:14px 24px;border:none;border-radius:10px;background:#f4a300;color:#fff;font-size:18px;cursor:pointer}
+.card{background:rgba(255,255,255,.95);max-width:760px;padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+pre{white-space:pre-wrap;font-family:Georgia,serif;font-size:20px;line-height:1.7}
+body:before{content:"🌻 🌻 🌻 🌻 🌻";position:fixed;top:10px;left:0;width:100%;text-align:center;font-size:40px;opacity:.25}
