@@ -1,0 +1,221 @@
+/*==================================================
+        PROYECTO HELIANTHUS
+            VARIABLES CSS
+==================================================*/
+
+:root{
+
+    /*====================================
+                COLORES
+    ====================================*/
+
+    --color-night:#081522;
+    --color-sky:#163B63;
+    --color-dawn:#FFD36A;
+    --color-sun:#FFD447;
+
+    --color-white:#FFFFFF;
+    --color-cream:#FFF8E8;
+
+    --color-yellow:#F5C542;
+    --color-yellow-light:#FFD95E;
+    --color-yellow-dark:#D9A400;
+
+    --color-green:#4C8B3B;
+    --color-green-dark:#2E5E24;
+
+    --color-brown:#7A4E1D;
+
+    --color-shadow:rgba(0,0,0,.25);
+
+    /*====================================
+                TIPOGRAFÍA
+    ====================================*/
+
+    --font-title:"Cormorant Garamond", serif;
+    --font-text:"Poppins", sans-serif;
+
+    --title-xl:5rem;
+    --title-lg:3.5rem;
+    --title-md:2.4rem;
+
+    --text-lg:1.3rem;
+    --text-md:1.1rem;
+    --text-sm:.95rem;
+
+    /*====================================
+                ESPACIADO
+    ====================================*/
+
+    --space-xs:8px;
+    --space-sm:16px;
+    --space-md:24px;
+    --space-lg:40px;
+    --space-xl:80px;
+
+    /*====================================
+                BORDES
+    ====================================*/
+
+    --radius-sm:8px;
+    --radius-md:18px;
+    --radius-lg:35px;
+    --radius-circle:50%;
+
+    /*====================================
+                SOMBRAS
+    ====================================*/
+
+    --shadow-small:
+        0 6px 15px rgba(0,0,0,.18);
+
+    --shadow-medium:
+        0 12px 30px rgba(0,0,0,.25);
+
+    --shadow-large:
+        0 20px 55px rgba(0,0,0,.35);
+
+    /*====================================
+                TRANSICIONES
+    ====================================*/
+
+    --transition-fast:.25s;
+
+    --transition-normal:.5s;
+
+    --transition-slow:1s;
+
+    /*====================================
+                Z-INDEX
+    ====================================*/
+
+    --z-background:-5;
+    --z-sky:-4;
+    --z-stars:-3;
+    --z-sun:-2;
+
+    --z-content:5;
+
+    --z-loader:9999;
+
+}
+
+/*====================================
+            TEMA GIRASOL
+====================================*/
+
+.theme-sunflower{
+
+    --primary:var(--color-yellow);
+
+    --secondary:var(--color-green);
+
+    --background:var(--color-night);
+
+}
+
+/*====================================
+            TEMA CLARO
+====================================*/
+
+.theme-light{
+
+    --background:#FFFDF8;
+
+    --text:#333333;
+
+}
+
+/*====================================
+            TEMA OSCURO
+====================================*/
+
+.theme-dark{
+
+    --background:#081522;
+
+    --text:#FFFFFF;
+
+}
+
+/*====================================
+        BOTONES
+====================================*/
+
+:root{
+
+    --button-height:60px;
+
+    --button-padding:18px 42px;
+
+}
+
+/*====================================
+        CARTA
+====================================*/
+
+:root{
+
+    --letter-width:900px;
+
+    --letter-background:#FFFDF5;
+
+    --letter-color:#3D3D3D;
+
+}
+
+/*====================================
+        GALERÍA
+====================================*/
+
+:root{
+
+    --gallery-width:1000px;
+
+    --photo-radius:20px;
+
+}
+
+/*====================================
+        CONTADOR
+====================================*/
+
+:root{
+
+    --counter-size:2rem;
+
+}
+
+/*====================================
+        MÚSICA
+====================================*/
+
+:root{
+
+    --music-button-size:65px;
+
+}
+
+/*====================================
+        RESPONSIVE
+====================================*/
+
+@media (max-width:768px){
+
+    :root{
+
+        --title-xl:3rem;
+        --title-lg:2.5rem;
+        --title-md:2rem;
+
+        --text-lg:1.05rem;
+        --text-md:1rem;
+        --text-sm:.9rem;
+
+        --space-xl:40px;
+
+        --letter-width:95%;
+
+    }
+
+}

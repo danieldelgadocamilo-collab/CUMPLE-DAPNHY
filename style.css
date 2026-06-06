@@ -1,7 +1,255 @@
-body{margin:0;font-family:Georgia,serif;background:linear-gradient(#ffd54f,#fff8dc);overflow:hidden}
-.screen,#letter{display:flex;justify-content:center;align-items:center;flex-direction:column;height:100vh;padding:20px;text-align:center}
-.hidden{display:none}
-button{padding:14px 24px;border:none;border-radius:10px;background:#f4a300;color:#fff;font-size:18px;cursor:pointer}
-.card{background:rgba(255,255,255,.95);max-width:760px;padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
-pre{white-space:pre-wrap;font-family:Georgia,serif;font-size:20px;line-height:1.7}
-body:before{content:"🌻 🌻 🌻 🌻 🌻";position:fixed;top:10px;left:0;width:100%;text-align:center;font-size:40px;opacity:.25}
+/*==================================================
+    PROYECTO HELIANTHUS
+    Archivo principal de estilos
+==================================================*/
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Módulos */
+@import url("css/variables.css");
+@import url("css/animaciones.css");
+@import url("css/carta.css");
+@import url("css/sobre.css");
+@import url("css/responsive.css");
+
+/*=========================
+        RESET
+==========================*/
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:#081522;
+    color:#ffffff;
+    overflow-x:hidden;
+    overflow-y:auto;
+    min-height:100vh;
+    position:relative;
+}
+
+/*=========================
+    TIPOGRAFÍA
+==========================*/
+
+h1,h2,h3{
+    font-family:"Cormorant Garamond",serif;
+    font-weight:600;
+}
+
+p{
+    line-height:1.8;
+}
+
+button{
+    font-family:"Poppins",sans-serif;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    transition:.3s;
+}
+
+/*=========================
+    IMÁGENES
+==========================*/
+
+img{
+    display:block;
+    width:100%;
+    max-width:100%;
+}
+
+/*=========================
+    ENLACES
+==========================*/
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/*=========================
+    CONTENEDORES BASE
+==========================*/
+
+section{
+    width:100%;
+    position:relative;
+}
+
+.hidden{
+    display:none !important;
+}
+
+/*=========================
+        LOADER
+==========================*/
+
+#loader{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#081522;
+    z-index:9999;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-content h2{
+    margin-top:20px;
+    color:#F5C542;
+}
+
+/*=========================
+        CIELO
+==========================*/
+
+#sky{
+    position:fixed;
+    inset:0;
+    z-index:-3;
+    overflow:hidden;
+    background:linear-gradient(
+        to bottom,
+        #081522 0%,
+        #12365a 45%,
+        #ffd36a 100%
+    );
+}
+
+/*=========================
+        INTRO
+==========================*/
+
+#intro{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.intro-container{
+    max-width:850px;
+}
+
+.intro-container h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.intro-container span{
+    color:#F5C542;
+}
+
+.intro-container p{
+    font-size:1.25rem;
+    margin-bottom:40px;
+}
+
+#startButton{
+    background:#F5C542;
+    color:#222;
+    padding:18px 40px;
+    border-radius:50px;
+    font-size:1.1rem;
+    font-weight:bold;
+}
+
+#startButton:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(245,197,66,.35);
+}
+
+/*=========================
+        GALERÍA
+==========================*/
+
+#gallery{
+    display:none;
+    padding:80px 20px;
+}
+
+.gallery-container{
+    width:min(900px,90%);
+    margin:auto;
+}
+
+#galleryImage{
+    border-radius:18px;
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
+
+#galleryText{
+    margin-top:30px;
+    font-size:1.25rem;
+    text-align:center;
+}
+
+/*=========================
+        CARTA
+==========================*/
+
+#letterSection{
+    display:none;
+    padding:100px 20px;
+}
+
+#letter{
+    max-width:900px;
+    margin:auto;
+}
+
+/*=========================
+        CONTADOR
+==========================*/
+
+#counterSection{
+    display:none;
+    text-align:center;
+    padding:100px 20px;
+}
+
+#loveCounter{
+    margin-top:30px;
+    font-size:2rem;
+    color:#F5C542;
+}
+
+/*=========================
+        FINAL
+==========================*/
+
+#ending{
+    display:none;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+#ending h1{
+    font-size:3rem;
+}
+
+#ending h2{
+    margin-top:20px;
+    color:#F5C542;
+}
